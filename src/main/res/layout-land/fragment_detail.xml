@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".DetailFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:src="@drawable/baskinta"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/detail_image" />
+
+    <TextView
+        android:id="@+id/detail_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_image"
+        android:layout_margin="5dp"
+        android:textSize="30sp"
+        tools:text="Mzaar Ski Resort" />
+
+    <TextView
+        android:id="@+id/detail_desc_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_text_view"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        tools:text="Location: Faraya, Mount Lebanon" />
+
+    <LinearLayout
+        android:id="@+id/detail_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_desc_text_view"
+
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/favorites_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/favorites_button" />
+
+        <Button
+            android:id="@+id/rating_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/rating_button" />
+    </LinearLayout>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rating_bar"
+        android:numStars="5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/detail_buttons"
+        android:stepSize="0.5"
+        android:visibility="invisible"
+        android:theme="@style/Theme.Project2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_rating_button"
+        android:text="@string/submit_rating_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rating_bar"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:background="@drawable/custom_button"/>
+
+</RelativeLayout>
+
+</ScrollView>

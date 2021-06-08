@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mint_green"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/app_logo"
+        android:src="@drawable/app_logo"
+        android:contentDescription="@string/logo_image_desc" />
+
+    <TextView
+        android:id="@+id/app_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:gravity="center"
+        android:text="@string/app_title_text_view"
+        android:textColor="@color/light_crimson"
+        android:textSize="50sp" />
+
+    <android.widget.Button
+        android:id="@+id/start_button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/app_name_text_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button1"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/start_button"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textColor="@color/mint_white"
+        android:textSize="20sp" />
+
+    <android.widget.Button
+        android:id="@+id/all_places_button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_below="@id/start_button"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_button1"
+        android:text="@string/all_places_button"
+        android:textAllCaps="false"
+        android:textColor="@color/mint_white"
+        android:textSize="20sp" />
+
+    <android.widget.Button
+        android:id="@+id/saved_places_button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/all_places_button"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button1"
+        android:text="@string/saved_places_button"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textColor="@color/mint_white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

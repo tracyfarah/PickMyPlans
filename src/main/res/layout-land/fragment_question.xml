@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mint_green"
+    tools:context=".QuestionFragment">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:text="Choose a setting" />
+
+    <LinearLayout
+        android:id="@+id/top_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_text_view"
+        android:layout_centerHorizontal="true">
+
+        <android.widget.Button
+            android:id="@+id/top_left_button"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_button"
+            android:drawableTop="@drawable/winter"
+            android:paddingTop="20dp"
+            tools:text="Winter" />
+
+        <android.widget.Button
+            android:id="@+id/top_right_button"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_button"
+            android:drawableTop="@drawable/fall"
+            android:paddingTop="20dp"
+            tools:text="Fall" />
+
+        <android.widget.Button
+            android:id="@+id/bottom_left_button"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_button"
+            android:drawableTop="@drawable/spring"
+            android:paddingTop="20dp"
+            tools:text="Spring" />
+
+        <android.widget.Button
+            android:id="@+id/bottom_right_button"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/custom_button"
+            android:drawableTop="@drawable/summer"
+            android:paddingTop="20dp"
+            tools:text="Summer" />
+    </LinearLayout>
+
+</RelativeLayout>

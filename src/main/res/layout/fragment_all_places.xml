@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mint_green"
+    tools:context=".AllPlacesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/category_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/category_text"
+            android:textColor="@color/pink"
+            android:textSize="36sp" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_text_view"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <android.widget.Button
+                android:id="@+id/button1"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/custom_button"
+                android:drawableTop="@drawable/beach_btn"
+                android:paddingTop="20dp"
+                android:text="@string/beach_btn" />
+
+            <android.widget.Button
+                android:id="@+id/button2"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/custom_button"
+                android:drawableTop="@drawable/biking_btn"
+                android:paddingTop="20dp"
+                android:text="@string/biking_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_layout1"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <android.widget.Button
+                android:id="@+id/button3"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/custom_button"
+                android:drawableTop="@drawable/party_btn"
+                android:paddingTop="40dp"
+                android:text="@string/party_btn" />
+
+            <android.widget.Button
+                android:id="@+id/button4"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/custom_button"
+                android:drawableTop="@drawable/hiking_btn"
+                android:paddingTop="20dp"
+                android:text="@string/hiking_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_layout2"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <android.widget.Button
+                android:id="@+id/button5"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/custom_button"
+                android:drawableTop="@drawable/picnic_btn"
+                android:paddingTop="20dp"
+                android:text="@string/picnic_btn" />
+
+            <android.widget.Button
+                android:id="@+id/button6"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/custom_button"
+                android:drawableTop="@drawable/ski_btn"
+                android:paddingTop="20dp"
+                android:text="@string/ski_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_layout3"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <android.widget.Button
+                android:id="@+id/button7"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/custom_button"
+                android:drawableTop="@drawable/sunset_btn"
+                android:paddingTop="20dp"
+                android:text="@string/sunset_btn" />
+
+            <android.widget.Button
+                android:id="@+id/button8"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/custom_button"
+                android:drawableTop="@drawable/waterfall_btn"
+                android:paddingTop="20dp"
+                android:text="@string/waterfall_btn" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

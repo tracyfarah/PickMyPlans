@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mint_green"
+    tools:context=".ResultFragment">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/result_text_view"
+        android:textColor="@color/light_crimson"
+        android:textSize="45sp" />
+
+    <ImageView
+        android:id="@+id/result_image_view"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/title_text_view"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/result_image_description"
+        android:src="@drawable/hiking" />
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_image_view"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        tools:text="Hiking"
+        android:textAllCaps="true"
+        android:textColor="@color/light_crimson"
+        android:textSize="45sp" />
+
+    <Button
+        android:id="@+id/show_places_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/show_places_btn" />
+
+</RelativeLayout>
